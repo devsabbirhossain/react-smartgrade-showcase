@@ -6,7 +6,7 @@ const Header = () => {
           <a href="/">
             <img
               className="h-[40px]"
-              src="./src/assets/lws-logo-en.svg"
+              src="./images/lws-logo-en.svg"
               alt="Lws"
             />
           </a>

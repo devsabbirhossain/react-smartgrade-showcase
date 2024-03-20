@@ -70,7 +70,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
@@ -87,7 +87,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
@@ -104,7 +104,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
@@ -127,7 +127,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
@@ -144,7 +144,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
@@ -161,7 +161,7 @@ const StudentList = () => {
                     <div className="flex space-x-3 items-center">
                       <img
                         className="w-8 h-8"
-                        src="./src/assets/avatar.png"
+                        src="./images/avatar.png"
                         width="32"
                         height="32"
                         alt="John Smith"
