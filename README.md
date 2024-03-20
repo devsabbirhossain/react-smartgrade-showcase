@@ -1,8 +1,3 @@
-# React + Vite
+# Smartgrade Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is a simple one page landing page to show student name, score and percentange.All this page htmls are divided into small react components and use tailwind css to makes the react components are beautiful.
