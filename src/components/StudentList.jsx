@@ -1,183 +1,294 @@
-const StudentList = () => {
-  return (
-    <>
-      <section className="py-24 lg:pt-[120px] lg:pb-28">
-        <div className="container">
-          <div className="mb-16 flex flex-col items-center">
-            <h2 className="text-3xl lg:text-[40px] mb-9 font-bold">
-              <span className="text-[#00CC8C]">Students</span> of the Year
-            </h2>
-            <form>
-              <div className="flex">
-                <div className="relative overflow-hidden text-gray-50 md:min-w-[380px] lg:min-w-[440px] rounded-[63px]">
-                  <input
-                    type="search"
-                    id="search-dropdown"
-                    className="z-20 block w-full bg-white px-4 py-2.5 pr-10 focus:outline-none rounded-[63px] placeholder:text-neutral-400 text-neutral-800"
-                    placeholder="Search by Student "
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="absolute right-0 inline-flex items-center justify-center w-10 top-0 h-full rounded-e-lg text-neutral-800">
-                    <svg
-                      className="h-4 w-4"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20">
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                      />
-                    </svg>
-                    <span className="sr-only">Search</span>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div className="max-w-[848px] mx-auto overflow-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-[#FFFFFF0D]">
-                  <th className="uppercase p-5 text-sm md:text-xl font-semibold md:min-w-[110px] text-left">
-                    ID
-                  </th>
-                  <th className="p-5 text-sm md:text-xl font-semibold text-left">
-                    Name
-                  </th>
-                  <th className="p-5 text-sm md:text-xl font-semibold">
-                    Scores
-                  </th>
-                  <th className="p-5 text-sm md:text-xl font-semibold">
-                    Percentage
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white/5">
-                  <td className="p-5 text-sm md:text-xl" colSpan="4">
-                    className One
-                  </td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">1</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">2</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">3</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
+import { Fragment } from "react";
+import StudentSearchForm from "./Form/StudentSearchForm";
 
-                <tr className="bg-white/5">
-                  <td className="p-5 text-sm md:text-xl" colSpan="4">
-                    className Two
-                  </td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">1</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">2</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
-                <tr className="border-b border-[#7ECEB529]">
-                  <td className="p-5 text-sm md:text-xl">3</td>
-                  <td className="p-5 text-sm md:text-xl">
-                    <div className="flex space-x-3 items-center">
-                      <img
-                        className="w-8 h-8"
-                        src="./images/avatar.png"
-                        width="32"
-                        height="32"
-                        alt="John Smith"
-                      />
-                      <span className="whitespace-nowrap">John Smith</span>
-                    </div>
-                  </td>
-                  <td className="p-5 text-sm md:text-xl text-center">A+</td>
-                  <td className="p-5 text-sm md:text-xl text-center">98%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+const allClasses = [
+  {
+    className: "One",
+    students: [
+      {
+        id: "1",
+        img: "./images/avatar.png",
+        name: "Sabbir Hossain",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "2",
+        img: "./images/avatar.png",
+        name: "Shakhawat Hossain",
+        score: "C+",
+        percentage: "55%",
+      },
+      {
+        id: "3",
+        img: "./images/avatar.png",
+        name: "Abdur Rahman",
+        score: "B+",
+        percentage: "70%",
+      },
+      {
+        id: "4",
+        img: "./images/avatar.png",
+        name: "Sultana Mimi",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "5",
+        img: "./images/avatar.png",
+        name: "Kasem Mulla",
+        score: "A",
+        percentage: "80%",
+      },
+      {
+        id: "6",
+        img: "./images/avatar.png",
+        name: "Meherun Nahar",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "7",
+        img: "./images/avatar.png",
+        name: "Abdul Alim",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "8",
+        img: "./images/avatar.png",
+        name: "Ekra Moni",
+        score: "F",
+        percentage: "20%",
+      },
+      {
+        id: "9",
+        img: "./images/avatar.png",
+        name: "Sabbir Ahmed",
+        score: "C",
+        percentage: "65%",
+      },
+      {
+        id: "10",
+        img: "./images/avatar.png",
+        name: "Prince Mahmud",
+        score: "D+",
+        percentage: "40%",
+      },
+    ],
+  },
+  {
+    className: "Two",
+    students: [
+      {
+        id: "1",
+        img: "./images/avatar.png",
+        name: "Aryan Sabbir",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "2",
+        img: "./images/avatar.png",
+        name: "Sharmin Jahan",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "3",
+        img: "./images/avatar.png",
+        name: "Shoukat Alam",
+        score: "A",
+        percentage: "85%",
+      },
+      {
+        id: "4",
+        img: "./images/avatar.png",
+        name: "Saiful Islam",
+        score: "B",
+        percentage: "70%",
+      },
+      {
+        id: "5",
+        img: "./images/avatar.png",
+        name: "Ram Bonik",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "6",
+        img: "./images/avatar.png",
+        name: "Roman Biswas",
+        score: "C+",
+        percentage: "55%",
+      },
+      {
+        id: "7",
+        img: "./images/avatar.png",
+        name: "Kawsar Ahmed",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "8",
+        img: "./images/avatar.png",
+        name: "Shobuj Sharma",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "9",
+        img: "./images/avatar.png",
+        name: "Asif Akbar",
+        score: "B-",
+        percentage: "70%",
+      },
+      {
+        id: "10",
+        img: "./images/avatar.png",
+        name: "Sultan Nasir",
+        score: "A",
+        percentage: "90%",
+      },
+    ],
+  },
+  {
+    className: "Three",
+    students: [
+      {
+        id: "1",
+        img: "./images/avatar.png",
+        name: "Saria Islam",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "2",
+        img: "./images/avatar.png",
+        name: "Shahanag Pervin",
+        score: "A-",
+        percentage: "75%",
+      },
+      {
+        id: "3",
+        img: "./images/avatar.png",
+        name: "Eahea Talkukder",
+        score: "C+",
+        percentage: "50%",
+      },
+      {
+        id: "4",
+        img: "./images/avatar.png",
+        name: "Rina Begum",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "5",
+        img: "./images/avatar.png",
+        name: "Rajesh Khanna",
+        score: "A+",
+        percentage: "100%",
+      },
+      {
+        id: "6",
+        img: "./images/avatar.png",
+        name: "Milon Hasan",
+        score: "C-",
+        percentage: "55%",
+      },
+      {
+        id: "7",
+        img: "./images/avatar.png",
+        name: "Rifat Talukder",
+        score: "B+",
+        percentage: "80%",
+      },
+      {
+        id: "8",
+        img: "./images/avatar.png",
+        name: "Sifat Sharma",
+        score: "A+",
+        percentage: "95%",
+      },
+      {
+        id: "9",
+        img: "./images/avatar.png",
+        name: "Ayat Islam",
+        score: "B",
+        percentage: "70%",
+      },
+      {
+        id: "10",
+        img: "./images/avatar.png",
+        name: "Fuad Hasan",
+        score: "B-",
+        percentage: "75%",
+      },
+    ],
+  },
+];
+
+const StudentList = () => {
+  const classList = allClasses.map((singleClass) => {
+    return (
+      <Fragment key={singleClass.className}>
+        <tr className="bg-white/5">
+          <td className="p-5 text-sm md:text-xl" colSpan="4">
+            className {singleClass.className}
+          </td>
+        </tr>
+        {singleClass.students.map((student, studentid) => (
+          <tr className="border-b border-[#7ECEB529]" key={studentid}>
+            <td className="p-5 text-sm md:text-xl">{student.id}</td>
+            <td className="p-5 text-sm md:text-xl">
+              <div className="flex space-x-3 items-center">
+                <img
+                  className="w-8 h-8"
+                  src={student.img}
+                  width="32"
+                  height="32"
+                  alt={student.name}
+                />
+                <span className="whitespace-nowrap">{student.name}</span>
+              </div>
+            </td>
+            <td className="p-5 text-sm md:text-xl text-center">
+              {student.score}
+            </td>
+            <td className="p-5 text-sm md:text-xl text-center">
+              {student.percentage}
+            </td>
+          </tr>
+        ))}
+      </Fragment>
+    );
+  });
+  return (
+    <section className="py-24 lg:pt-[120px] lg:pb-28">
+      <div className="container">
+        <StudentSearchForm />
+        <div className="max-w-[848px] mx-auto overflow-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-[#FFFFFF0D]">
+                <th className="uppercase p-5 text-sm md:text-xl font-semibold md:min-w-[110px] text-left">
+                  ID
+                </th>
+                <th className="p-5 text-sm md:text-xl font-semibold text-left">
+                  Name
+                </th>
+                <th className="p-5 text-sm md:text-xl font-semibold">Scores</th>
+                <th className="p-5 text-sm md:text-xl font-semibold">
+                  Percentage
+                </th>
+              </tr>
+            </thead>
+            <tbody>{classList}</tbody>
+          </table>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
